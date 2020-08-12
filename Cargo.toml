@@ -3,7 +3,9 @@ name = "dekker"
 version = "0.1.0"
 authors = ["fabianboesiger <boesiger.fabian@outlook.com>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
+license = "MIT OR Apache-2.0"
+description = "Implementation of Dekker's algorithm for mutual exclusion."
+repository = "https://github.com/fabianboesiger/dekker/"
+readme = "README.md"
+keywords = [ "dekker", "algorithm", "shared-memory", "mutual-exclusion", "mutex"]
+categories = ["concurrency", "algorithms"]
