@@ -74,10 +74,11 @@ impl<T> Drop for Process<T> {
             if (*self.owner).processes == 0 {
                 let dekker = Box::from_raw(self.owner);
                 drop(dekker);
+                std::mem::forget(guard);
+            } else {
+                drop(guard);
             }
         }
-
-        drop(guard);
     }
 }
 
